@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+/** main **/
+
+.main {
+    height: calc(100vh - 90px);
+}
+
+/** play-menu **/
+
+.play-menu {
+    height: 90px;
+}
