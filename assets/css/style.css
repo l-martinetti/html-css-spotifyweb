@@ -15,8 +15,16 @@
     display: flex;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .justify-between {
     justify-content: space-between;
+}
+
+.d-inline-block {
+    display: inline-block;
 }
 
 /** main **/
@@ -30,12 +38,28 @@
 .sidebar {
     width: 227px;
     height: 100%;
+    background-color: chocolate;    /*debug*/
+}
+
+/** catalog **/
+
+.catalog {
+    width: calc(100% - 227px);
+    overflow: auto;
+    background-color: lightblue;     /*debug*/
+}
+
+.upgrade {
+    height: 90px;
+    text-align: end;
+    background-color: chartreuse;    /*debug*/
 }
 
 /** play-menu **/
 
 .play-menu {
     height: 93px;
+    background-color: lightblue;    /*debug*/
 }
 
 .play-menu .row {
