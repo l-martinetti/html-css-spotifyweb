@@ -1,7 +1,20 @@
+:root {
+    --main-bg-color: #141922;
+    --upgrade-bg-color: #080B12;
+    --sidebar-bg-color: #000000;
+    --white-txt-color: #FFF;
+    --gray-text-color: #A3A3A3;
+    --playmenu-bg-color: #242424;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .debug {
@@ -27,6 +40,10 @@
     display: inline-block;
 }
 
+.white-text {
+    color: var(--white-txt-color);
+}
+
 /** main **/
 
 .main {
@@ -38,7 +55,25 @@
 .sidebar {
     width: 227px;
     height: 100%;
-    background-color: chocolate;    /*debug*/
+    background-color: var(--sidebar-bg-color);
+}
+
+/** upgrade **/
+
+.upgrade {
+    height: 90px;
+    text-align: end;
+    background-color: var(--upgrade-bg-color);
+}
+
+.upgrade a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 90px;
+    padding: 15px 40px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
 }
 
 /** catalog **/
@@ -46,20 +81,15 @@
 .catalog {
     width: calc(100% - 227px);
     overflow: auto;
-    background-color: lightblue;     /*debug*/
+    background-color: var(--main-bg-color);
 }
 
-.upgrade {
-    height: 90px;
-    text-align: end;
-    background-color: chartreuse;    /*debug*/
-}
 
 /** play-menu **/
 
 .play-menu {
     height: 93px;
-    background-color: lightblue;    /*debug*/
+    background-color: var(--playmenu-bg-color);
 }
 
 .play-menu .row {
