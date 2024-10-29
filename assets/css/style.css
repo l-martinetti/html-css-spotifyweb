@@ -9,14 +9,35 @@
     border: 1px solid black;
 }
 
+/** layout **/
+
+.row {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
 /** main **/
 
 .main {
     height: calc(100vh - 90px);
 }
 
+/** sidebar **/
+
+.sidebar {
+    width: 227px;
+    height: 100%;
+}
+
 /** play-menu **/
 
 .play-menu {
-    height: 90px;
+    height: 93px;
+}
+
+.play-menu .row {
+    padding: 10px;
 }
