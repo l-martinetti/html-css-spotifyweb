@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .debug {
@@ -69,7 +69,7 @@ body {
 /** sidebar **/
 
 .sidebar {
-    width: 227px;
+    width: 230px;
     height: 100%;
     background-color: var(--sidebar-bg-color);
 }
@@ -77,7 +77,7 @@ body {
 /** catalog **/
 
 .catalog {
-    width: calc(100% - 227px);
+    width: calc(100% - 230px);
     overflow: auto;
     background-color: var(--main-bg-color);
 }
@@ -85,8 +85,11 @@ body {
 /** upgrade **/
 
 .upgrade {
+    width: calc(100% - 230px);
     height: 90px;
     text-align: end;
+    position: fixed;
+    opacity: 0.8;
     background-color: var(--upgrade-bg-color);
 }
 
@@ -98,6 +101,12 @@ body {
     margin-right: 10px;
     border: 2px solid white;
     border-radius: 50px;
+}
+
+/** nav bar **/
+
+.album .navbar {
+    margin-top: 90px;
 }
 
 /** album **/
@@ -118,7 +127,7 @@ body {
 /** play-menu **/
 
 .play-menu {
-    height: 93px;
+    height: 90px;
     background-color: var(--playmenu-bg-color);
 }
 

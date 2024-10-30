@@ -1,1 +1,17 @@
 /* Breakpoint visti in classe 600 - 700 - 1100 px */
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .catalog {
+        width: calc(100% - 50px);
+    }
+
+    .upgrade {
+        width: calc(100% - 50px);
+    }
+}
