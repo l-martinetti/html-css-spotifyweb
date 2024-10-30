@@ -2,6 +2,25 @@
 
 /* mobile */
 
+@media screen and (max-width: 700px) {
+    .container-album .row {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .col {
+        max-width: calc(100% / 4 - 15px);
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar ul li:first-child {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 50px;
@@ -13,5 +32,18 @@
 
     .upgrade {
         width: calc(100% - 50px);
+    }
+
+    .container-album .row {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .col {
+        max-width: calc(100% / 2 - 15px);
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
     }
 }

@@ -29,7 +29,7 @@ body {
 }
 
 .col {
-    max-width: calc(100% / 6);
+    max-width: calc(100% / 6 - 15px);
 }
 
 .d-flex {
@@ -107,6 +107,21 @@ body {
 
 .album .navbar {
     margin-top: 90px;
+    padding-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--gray-text-color);
 }
 
 /** album **/
@@ -116,12 +131,21 @@ body {
     padding-right: 30px;
 }
 
+.container-album h2 {
+    margin-top: 30px;
+}
+
 .container-album div.row {
     margin-top: 35px;
+    gap: 15px;
 }
 
 .album img {
     width: 100%;
+}
+
+.card h3 {
+    margin-top: 20px;
 }
 
 /** play-menu **/
