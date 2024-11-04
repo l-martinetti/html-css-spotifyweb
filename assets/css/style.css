@@ -21,6 +21,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
 .debug {
     background-color: lightgray;
     border: 1px solid black;
@@ -50,6 +58,14 @@ a {
 
 .align-center {
     text-align: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.content-center {
+    align-content: center;
 }
 
 .d-inline-block {
@@ -118,10 +134,6 @@ a {
     padding-top: 20px;
 }
 
-.navbar ul {
-    list-style: none;
-}
-
 .navbar ul li {
     margin-right: 20px;
 }
@@ -148,10 +160,6 @@ a {
     gap: 15px;
 }
 
-.album img {
-    width: 100%;
-}
-
 .card h3 {
     margin-top: 20px;
 }
@@ -167,6 +175,70 @@ a {
     background-color: var(--playmenu-bg-color);
 }
 
-.play-menu .row {
-    padding: 10px;
+.playbar {
+    height: 100%;
 }
+
+.playbar .play-side-menus {
+    width: 230px;
+    height: 100%;
+    background-color: aqua;
+}
+
+.playbar .playsong {
+    height: 100%;
+    width: calc(100% - 460px);
+    background-color: bisque;
+}
+
+.playbar .buttons {
+    height: 50px;
+    background-color: cadetblue;
+}
+
+.playbar .elapse {
+    height: 40px;
+}
+
+/* .play-menu p {
+    font-size: 0.8rem;
+}
+
+.play-menu .row {
+    height: 100%;
+}
+
+.play-menu .col {
+    max-width: 230px;
+}
+
+.play-menu .col nav {
+    height: 100%;
+}
+
+.play-menu .col ul {
+    font-size: 0.8rem;
+    height: 100%;
+}
+
+.play-menu .col ul li:first-child {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.play-menu .play-img {
+    max-width: calc(100% / 3);
+}
+
+.play-menu .col ul li:first-child span {
+    padding-left: 10px;
+}
+
+.play-menu .col ul li:last-child {
+    width: 40%;
+}
+ */
+
+
+
+
