@@ -182,10 +182,10 @@ img {
 /** upgrade **/
 
 .upgrade {
-    width: calc(100% - 230px);
     height: 90px;
     text-align: end;
-    position: fixed;
+    position: sticky;
+    top: 0;
     opacity: 0.8;
     background-color: var(--upgrade-bg-color);
 }
@@ -202,7 +202,6 @@ img {
 /** nav bar **/
 
 .album .navbar {
-    margin-top: 90px;
     padding-top: 20px;
 }
 
