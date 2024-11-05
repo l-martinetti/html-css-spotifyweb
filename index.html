@@ -14,14 +14,13 @@
     <div class="main d-flex">
 
             <!-- sidebar -->
-        <div class="sidebar d-flex">
-
-                
+        <div class="sidebar d-flex">   
             <div class="top-side">
 
                     <!-- logo -->
                 <div class="logo">
-                    <img src="assets/img/logo.svg" alt="">
+                    <img class="logo-big" src="assets/img/logo.svg" alt="">
+                    <img class="hide logo-small" src="assets/img/logo-small.svg" alt="">
                 </div>
                     <!-- /logo -->
 
@@ -78,7 +77,21 @@
 
             </div>
 
-            <div class="bottom-side"></div>
+            <div class="bottom-side">
+                <div>
+                    <a href="#">
+                        <img class="install" src="assets/img/download.svg" alt="">
+                        <span class="install-app gray-text">Installa app</span>
+                    </a>
+
+                    <hr>
+
+                    <a href="#">
+                        <img class="border-50" src="assets/img/profile.svg" alt="">
+                        <span class="white-text">John Doe</span>
+                    </a>
+                </div>
+            </div>
         </div>
             <!-- /sidebar -->
 
@@ -96,7 +109,7 @@
 
                     <!-- nav-bar -->
                 <nav class="navbar">
-                    <ul class="d-flex justify-center">
+                    <ul class="d-flex justify-center flex-wrap">
                         <li>
                             <a href="#">in evidenza</a>
                         </li>
@@ -253,52 +266,60 @@
     <div class="play-menu">
         <div class="playbar d-flex">
 
-            <div class="play-side-menus content-center align-center">song</div>
+            <div class="play-side-menus d-flex">
+                <div class="sinister-small">
+                    <img src="assets/img/sinister.jpeg" alt="">
+                </div>
+                <div class="song-name">
+                    <h6 class="white-text"><strong>Sinister</strong></h6>
+                    <p class="gray-text">Brano Nome</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-regular fa-heart gray-text"></i>
+                    <i class="fa-regular fa-folder gray-text"></i>
+                </div>
+            </div>
 
             <div class="playsong align-center">
                 <div class="buttons">
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                    <ul class="d-flex justify-center items-center">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-shuffle white-text"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-backward-step white-text"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-circle-play white-text"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-forward-step white-text"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-rotate-right white-text"></i></a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="elapse d-flex justify-center items-center">
-                    <span>0:00</span>
-                    <div><hr></div>
-                    <span>0:00</span>
+                    <span class="white-text">0:00</span>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="white-text">4:35</span>
                 </div>
             </div>
 
-            <div class="play-side-menus content-center align-center">other</div>
+            <div class="play-side-menus content-center align-center">
+                <i class="fa-solid fa-list white-text"></i>
+                <i class="fa-solid fa-display white-text"></i>
+                <i class="fa-solid fa-volume-high white-text"></i>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
 
         </div>
-
-        <!-- <div class="row justify-between">
-            <div class="col">
-                <nav>
-                    <ul class="d-flex justify-between items-center">
-                        <li class="d-flex">
-                            <div class="play-img">
-                                <img src="assets/img/sinister.jpeg" alt="">
-                            </div>
-                            <span>
-                                <p class="white-text"><strong>Sinister</strong></p>
-                                <p class="gray-text">Brano Nome</p>
-                            </span>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-heart gray-text"></i><i class="fa-regular fa-folder gray-text"></i>
-                        </li>
-                    </ul>
-                </nav>      
-            </div>
-            <div class="col">column</div>
-            <div class="col">column</div>
-        </div> -->
     </div>
 
         <!-- /play-menu -->

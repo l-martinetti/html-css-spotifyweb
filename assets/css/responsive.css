@@ -1,15 +1,22 @@
 /* Breakpoint visti in classe 600 - 700 - 1100 px */
-
-/* mobile */
+@media screen and (max-width: 1099px) {
+    .container-album {
+        font-size: 70%;
+    }
+}
 
 @media screen and (max-width: 700px) {
+    .container-album {
+        font-size: 60%;
+    }
+
     .container-album .row {
         flex-wrap: wrap;
         justify-content: left;
     }
 
     .col {
-        max-width: calc(100% / 4 - 15px);
+        max-width: calc(100% / 4 - 10px);
     }
 
     .navbar ul {
@@ -26,11 +33,21 @@
         width: 50px;
     }
 
-    .catalog {
-        width: calc(100% - 50px);
+    .sidebar .logo-big,
+    .sidebar .list-home .white-text,
+    .sidebar .list-home .gray-text,
+    .list-playlist,
+    .sidebar .bottom-side img ~ span,
+    .sidebar .bottom-side a span.install-app,
+    .sidebar .bottom-side hr {
+        display: none;
     }
 
-    .upgrade {
+    .logo-small {
+        display: block;
+    }
+
+    .catalog {
         width: calc(100% - 50px);
     }
 
@@ -40,7 +57,7 @@
     }
 
     .col {
-        max-width: calc(100% / 2 - 15px);
+        max-width: calc(100% / 2 - 10px);
     }
 
     .navbar ul {
